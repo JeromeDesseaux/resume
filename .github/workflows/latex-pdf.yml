@@ -1,0 +1,30 @@
+name: Build LaTeX PDF
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make texlive texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-french
+
+      - name: Build PDF using Makefile
+        run: make
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: Resume PDF
+          path: main.pdf
