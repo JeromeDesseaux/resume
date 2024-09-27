@@ -22,6 +22,12 @@ jobs:
       - name: Build PDFs using Makefile
         run: make
 
+      - name: Delete Existing Release
+        run: |
+          gh release delete v1.0.0 -y
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
