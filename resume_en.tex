@@ -3,20 +3,20 @@
 \moderncvcolor{blue}    % Options: 'blue', 'orange', 'green', 'red', 'purple'
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.82]{geometry}
 \usepackage{graphicx}   % Required for including images
 \setlength{\hintscolumnwidth}{2.5cm}
 
 % Personal information
 \name{Jérôme}{DESSEAUX}
-\title{\textnormal{\textls[150]{Software Architect}}}
+\title{\textnormal{\textls[150]{Senior Software Engineer \& Tech Lead}}}
 \address{29 Allée du Petit Houx}{76230, Bois Guillaume, France}
 \phone[mobile]{(+33) (0)6 83 10 42 78}
 \email{jerome.desseaux@skuld.fr}
 \social[github]{JeromeDesseaux}
-\quote{\textit{\textcolor{darkgray}{Creating robust and scalable solutions aligned with strategic objectives while optimizing performance and costs.}}}
+\quote{\textit{\textcolor{darkgray}{Tech Lead and Senior Software Engineer specializing in building and guiding teams through high-performance backend systems. Combining hands-on Python technical expertise in distributed architecture with proven leadership in mentoring engineers and driving architectural decisions for mission-critical applications.}}}
 % Add your photo
-\photo[64pt][0.8pt]{moi.jpg}
+\photo[60pt][0.8pt]{moi.jpg}
 
 \begin{document}
 
@@ -25,161 +25,159 @@
 
 % Summary
 \section{Summary}
-Software Engineer with over \textit{8 years of experience} in full-stack development, architecture, and data processing. Expertise in designing robust and scalable solutions aligned with strategic objectives, with a particular focus on performance optimization, cost reduction, and technical debt mitigation.
+Tech Lead and Senior Software Engineer with over \textit{10 years of experience} building high-performance backend systems. Specializing in translating complex business requirements into concrete architectural strategies and driving technical implementation from concept to production.
 
 \vspace{0.1cm}
 
-Proficient in a wide range of technologies, with expertise in Python, C\#, .NET, and JavaScript. Passionate about collaboration and continuous improvement, I aim to bring my expertise to an ambitious organization while thriving in a stimulating and structured environment.
+Deep expertise in Python stack \textbf{(FastAPI, Django, Flask)} and distributed architectures (microservices, async patterns, RabbitMQ, hexagonal architecture). Proven track record in:
+
+\begin{itemize}
+    \item \textbf{Leading major migrations:} Monolith to microservices/FastAPI transitions with zero-downtime deployments.
+    \item \textbf{Performance excellence:} Managing critical systems handling 1M requests/hour; achieving up to 50\% response time reductions and 30x database query optimizations.
+    \item \textbf{Leadership \& Engineering Excellence:} Establishing quality standards (testing, code reviews, CI/CD), mentoring teams on best practices, and leading distributed teams (up to 5 engineers across multiple countries).
+\end{itemize}
 
 % Technical Skills
 \section{Technical Skills}
-\subsection{Backend}
-\cvitem{Languages}{Python, C\#, Go, TypeScript}
-\cvitem{Frameworks}{Django, Flask, FastAPI, .NET, Express.js}
+\subsection{Core Expertise}
+\cvitem{Python Stack}{\textbf{FastAPI, Django, Flask} -- 10+ years building high-performance backend systems}
+\cvitem{Backend Architecture}{Microservices design, RESTful API development, async/await patterns, service decomposition}
+\cvitem{Performance Optimization}{Query optimization, caching strategies, system profiling, scalability improvements}
+\cvitem{Technical Leadership}{Distributed team management, architecture decisions, code review, mentoring}
+
+\subsection{Backend Technologies}
+\cvitem{Primary Languages}{Python (FastAPI, Django, Flask, async/await, Pydantic, SQLAlchemy)}
+\cvitem{Secondary Languages}{Go, TypeScript}
 
 \subsection{Frontend}
 \cvitem{Languages}{JavaScript, TypeScript}
 \cvitem{Frameworks}{React.js, Angular.js, Vue.js}
 
-\subsection{Tools}
-\cvitem{IDEs}{PyCharm, Visual Studio, Visual Studio Code}
-\cvitem{Versioning}{Git, Azure DevOps}
-\cvitem{Project Management}{Trello, Jira}
+\subsection{DevOps \& Infrastructure}
+\cvitem{Cloud Platforms}{AWS, GCP}
+\cvitem{Containerization}{Docker, Kubernetes}
+\cvitem{CI/CD}{Automated testing, deployment pipelines, monitoring}
+\cvitem{Versioning}{Git, GitHub, GitLab}
 
-\subsection{Operating Systems}
-\cvitem{OS}{Windows, Linux, Mac}
+\subsection{Data \& Databases}
+\cvitem{Databases}{SQL optimization, database performance tuning}
+\cvitem{Data Processing}{ETL pipelines, web scraping (Beautiful Soup), data analysis}
 
-\subsection{DevOps}
-\cvitem{Cloud}{AWS, Azure}
-\cvitem{Orchestration}{Kubernetes}
-\cvitem{Containerization}{Docker}
-
-\subsection{Project Management}
-\cvitem{Methodologies}{Agile SCRUM}
+\subsection{Methodologies}
+\cvitem{Agile}{SCRUM, code reviews, continuous improvement}
 
 % Professional Experience
 \section{Professional Experience}
 
-\cventry{2024}{Tech-Lead}{LENGOW}{Freelance}{Remote}{
+\cventry{Current}{Senior Python Engineer \& Tech Lead}{BackMarket}{Freelance}{Remote}{
     \begin{itemize}
-        \item Implemented a new connector (Octopia) for the Lengow platform, enabling integration with new marketplaces.
-        \item Supported the team in developing new features and optimizing existing ones.
-        \item Ensured code quality and adherence to best practices.
-        \item Contributed to technical choices and platform architecture.
-        \item Monitored the platform and resolved technical incidents.
-        \item Upgraded existing services to the latest versions of Django and Python.
-        \item Developed Docker usage as a tool for development and deployment:
+        \item Led architectural extraction of checkout domain from legacy \textbf{Django monolith to FastAPI microservice}, guiding the team on \textbf{hexagonal architecture} principles to ensure clean separation of concerns and maintainable code at scale.
+        \item Designed and implemented high-performance order processing system handling \textbf{1 million requests per hour}, coaching engineers on scalable patterns for critical e-commerce checkout flows focused on reliability and performance.
+        \item Integrated \textbf{RabbitMQ dead letter queues} for resilient error handling and comprehensive failure recovery, mentoring the team on distributed architecture patterns for system reliability.
+        \item Championed software quality by establishing testing standards and leading technical code reviews, ensuring production-ready code and engineering best practices throughout the migration.
+        \item Drove technical excellence initiatives including Python and Django version upgrades, performance monitoring, and security improvements while mentoring engineers on advanced architectural patterns.
+    \end{itemize}}
+
+\cventry{2024-2025}{Senior Python Engineer \& Tech Lead}{Lengow}{Freelance}{Remote}{
+    \begin{itemize}
+        \item Led technical team on e-commerce integration platform built with \textbf{Python/Django}, driving architecture decisions and ensuring code quality across the development lifecycle while mentoring engineers on best practices.
+        \item Architected and implemented new marketplace connector (Octopia \& TikTokShop), designing scalable integration patterns for the Lengow platform serving multiple e-commerce channels.
+        \item Orchestrated major \textbf{Python and Django version upgrades} across production services, ensuring backward compatibility and zero-downtime deployments.
+        \item Designed and implemented comprehensive Docker-based development and deployment strategy:
         \begin{itemize}
-            \item Reduced onboarding time for new developers by 500\%.
-            \item Shortened project setup time from one week (on average) to one day.
-            \item Transitioned from manual to automated deployments.
-            \item Reduced downtime.
-            \item Integrated Docker into the CI/CD pipeline.
-            \item Automated end-to-end testing.
+            \item Reduced developer onboarding time by 500\% (one week to one day).
+            \item Architected containerized microservices infrastructure enabling automated deployments.
+            \item Integrated Docker into CI/CD pipeline with automated end-to-end testing.
+            \item Minimized production downtime through container orchestration.
         \end{itemize}
-        \item Contributed to overall data security improvements.
+        \item Mentored development team on Python best practices, code review standards, and architectural patterns.
+        \item Led platform performance monitoring, technical incident resolution, and security improvement initiatives.
     \end{itemize}}
 
-\cventry{2023}{Software Engineer}{LA POSTE}{Freelance}{Remote}{
+\cventry{2023}{Senior Python Engineer}{La Poste}{Freelance}{Remote}{
     \begin{itemize}
-        \item Developed an IaaS platform providing internal cloud services.
-        \item Created a new frontend with Angular.
-        \item Managed virtual machines, security, and certificates.
-        \item Integrated new features.
-        \item Optimized existing features.
-        \item Improved SQL queries and application performance (average load times reduced by a factor of 15).
+        \item Developed IaaS platform providing internal cloud services, building Angular frontend for virtual machine provisioning, security management, and certificate administration.
+        \item Led SQL query optimization and application performance improvements, achieving 15x reduction in average load times through database tuning and caching strategies.
+        \item Integrated new platform features and optimized existing functionality, improving overall system performance and user experience.
     \end{itemize}}
 
-\cventry{2022}{Software Engineer}{LENGOW}{Freelance}{Remote}{
+\cventry{2022}{Senior Python Engineer}{Lengow}{Freelance}{Remote}{
     \begin{itemize}
-        \item Upgraded the technical foundation with a significant Django update.
-        \item Optimized application performance and reduced technical debt.
-        \item Transitioned from a synchronous to an asynchronous architecture.
-        \item Solved technical challenges in close collaboration with development teams.
+        \item Led major Django framework upgrade, modernizing the technical foundation and reducing technical debt across the codebase.
+        \item Architected transition from synchronous to asynchronous processing patterns using async/await, improving application performance and scalability.
+        \item Collaborated with development teams on complex technical challenges, providing guidance and mentorship throughout the upgrade process.
     \end{itemize}}
 
-\cventry{2022}{Software Engineer}{SIGNAUX FAIBLES}{Freelance}{Remote}{
+\cventry{2022}{Senior Python Engineer}{BetaGouv -- Signaux Faibles}{Freelance}{Remote}{
     \begin{itemize}
-        \item Improved database performance (from 30s to 1s query times).
-        \item Developed new backend features in Golang.
-        \item Optimized data import scripts in TypeScript.
-        \item Implemented fraud detection algorithms.
-        \item Operated in a complex financial environment with stringent constraints (e.g., restricted zones).
+        \item Optimized database performance through query tuning and indexing strategies, reducing query times from 30s to 1s (30x improvement).
+        \item Developed new backend features in Golang and optimized data import scripts in TypeScript for improved processing efficiency.
+        \item Implemented fraud detection algorithms for financial transaction monitoring in a highly regulated environment.
+        \item Delivered solutions within stringent security constraints and restricted operational zones typical of complex financial systems.
     \end{itemize}}
 
-\cventry{2021}{Software Architect}{DEEPREACH}{Freelance}{Remote}{
+\cventry{2021}{Senior Python Engineer \& Tech Lead}{DeepReach}{Freelance}{Remote}{
     \begin{itemize}
-        \item Designed the backend and frontend architecture of the application.
-        \item Reduced response times by 50\% (from 2s to 1s).
-        \item Transitioned from a monolithic to a microservices architecture.
-        \item Integrated VueJS into the frontend.
-        \item Developed new features and optimized existing ones.
-        \item Ensured code quality and adherence to best practices.
-        \item Operated in an AWS environment with numerous external calls.
-        \item Optimized and monitored AWS costs.
+        \item Led the complete backend and frontend system redesign, defining service boundaries and API contracts to guide the team through the microservices transition.
+        \item Led architectural evolution from monolithic to microservices architecture using Python, achieving 50\% response time reduction (2s to 1s).
+        \item Guided the team in designing scalable backend architecture optimized for AWS cloud environment with multiple third-party API integrations.
+        \item Implemented performance optimization strategies including caching, query optimization, and asynchronous processing patterns.
+        \item Integrated modern frontend framework (VueJS) with RESTful backend APIs, ensuring clean separation of concerns.
+        \item Mentored the development team by establishing code quality standards, architectural patterns, and best practices across the organization.
+        \item Optimized AWS infrastructure costs through resource monitoring, right-sizing, and efficient service design.
     \end{itemize}}
 
-\cventry{2021}{Tech-Lead Data}{CHANEL}{Freelance}{Remote}{
+\cventry{2021}{Tech-Lead Data}{Chanel}{Freelance}{Remote}{
     \begin{itemize}
-        \item Designed and developed AI-oriented POCs using microservices.
-        \item Collaborated with CHANEL's innovation lab based in New York.
-        \item Processed voice data and integrated Azure services.
-        \item Established a CI/CD pipeline.
-        \item Developed services in Python (FastAPI), with a web client in React and a desktop client in C\#.
+        \item Led the architecture and development of a microservices-based AI platform using \textbf{Python FastAPI} for backend services, integrating voice data processing with Azure cloud services.
+        \item Designed RESTful API architecture with FastAPI leveraging async/await patterns, Pydantic models for data validation, and OpenAPI documentation for seamless frontend integration.
+        \item Built scalable backend services handling real-time voice data processing, coordinating between multiple microservices for AI model inference and data pipeline management.
+        \item Delivered full-stack solution: FastAPI backend, React web client, and C\# desktop application, collaborating with CHANEL's New York-based innovation lab.
+        \item Established CI/CD pipeline and DevOps practices for automated testing and deployment of microservices architecture.
+        \item Led technical architecture decisions and POC development, demonstrating production viability of microservices approach for AI applications.
     \end{itemize}}
 
-\cventry{2019}{Tech-Lead}{OPEAZ}{Freelance}{Remote}{
+\cventry{2019}{Senior Python Engineer \& Tech Lead}{Opeaz}{Freelance}{Remote}{
     \begin{itemize}
-        \item Built and managed a team of five developers across multiple countries (Israel, France, Brazil).
-        \item Guided the team in technical decisions.
-        \item Optimized code and reviewed pull requests.
-        \item Migrated from a monolithic to a microservices architecture (Django).
-        \item Developed data processing pipelines (scraping, APIs) and managed projects using Django.
-        \item Implemented CI/CD pipelines and monitoring tools.
-        \item Reduced operational costs by 30\%.
-        \item Ensured code quality and adherence to best practices.
-        \item Monitored the platform and resolved technical incidents.
-        \item Expanded Docker usage for development and deployment.
-        \item Helped the company secure its first funding round (€1M raised).
+        \item Built and led international development team of five engineers across Israel, France, and Brazil, managing distributed collaboration and technical mentorship.
+        \item Architected and executed transition from monolithic to \textbf{Django-based microservices architecture}, defining service boundaries and migration strategy.
+        \item Designed and developed data processing pipelines using Python (Django) for web scraping, API integrations, and ETL workflows.
+        \item Established engineering excellence practices: comprehensive code reviews, CI/CD pipelines, monitoring infrastructure, and Docker-based deployment workflows.
+        \item Drove technical architecture decisions and guided team through complex backend development challenges.
+        \item Reduced operational costs by 30\% through infrastructure optimization and efficient system design.
+        \item Contributed to business success by delivering robust technical foundation, supporting company's first funding round (€1M raised).
     \end{itemize}}
 
 \cventry{2019}{Tech-Lead Data}{RATP}{Freelance}{Remote}{
     \begin{itemize}
-        \item Led data-driven project development.
-        \item Developed proof-of-concepts.
-        \item Created dashboards to monitor API consumption.
-        \item Built pipelines for processing massive datasets.
+        \item Led development of data-driven projects and proof-of-concepts for transit operations analytics and optimization.
+        \item Built data processing pipelines in Python for handling large-scale transit datasets, enabling real-time analysis and reporting.
+        \item Created monitoring dashboards for API consumption tracking, system performance analysis, and operational metrics visualization.
     \end{itemize}}
 
-\cventry{2017}{Lead Data Scientist}{CAISSE D'EPARGNE NORMANDIE}{Remote}{}{
+\cventry{2017}{Lead Data Scientist}{Caisse d'Epargne Normandie}{Remote}{}{
     \begin{itemize}
-        \item First data scientist in the company.
-        \item Promoted a data-driven culture by organizing workshops.
-        \item Developed machine learning use cases.
-        \item Created an award-winning OCR algorithm.
-        \item Demonstrated tangible results in process automation.
-        \item Contributed to recruiting new data scientists.
-        \item Collaborated with BPCE (main group) on data projects.
+        \item Pioneered the data science function as the company's founding data scientist, establishing technical foundation for ML initiatives.
+        \item Promoted data-driven culture by organizing workshops and training sessions for stakeholders across the organization.
+        \item Developed machine learning use cases and created award-winning OCR algorithm for document processing automation.
+        \item Demonstrated tangible results in process automation, contributing to recruiting additional data scientists as the team grew.
+        \item Collaborated with BPCE (parent group) on strategic data projects and cross-organization best practice sharing.
     \end{itemize}}
 
-\cventry{2016}{Data Scientist}{MATMUT}{Permanent Contract}{On-Site}{
+\cventry{2016}{Data Scientist}{Matmut}{Permanent Contract}{On-Site}{
     \begin{itemize}
-        \item Contributed to various projects, from web development to dashboard creation for major companies like Total and Matmut.
-        \item Developed predictive models for client data analysis and visualization.
+        \item Developed predictive models and data visualization solutions for enterprise clients.
     \end{itemize}}
 
 \cventry{2015}{C\# .NET Developer}{Devolis}{Permanent Contract}{On-Site}{
     \begin{itemize}
-        \item Worked on various projects ranging from web development to interactive dashboards using ASP.NET for major clients like Total and Matmut.
-        \item Implemented RESTful web services in ASP.NET and used Microsoft SQL Server for data storage.
-        \item Deployed and managed applications on Microsoft Azure, integrating services like Azure Functions and Azure Blob Storage.
-        \item Developed predictive models for client data analysis with dynamic visualizations integrated into .NET applications.
-        \item Collaborated with multidisciplinary teams using Microsoft tools such as Visual Studio and Azure DevOps for version control and continuous integration.
+        \item Built web applications and RESTful APIs using ASP.NET for enterprise clients (Total, Matmut).
+        \item Deployed applications on Microsoft Azure with SQL Server backend.
     \end{itemize}}
 
 \cventry{2014}{Fullstack Web Developer}{Junior Enterprise INSA Rouen (AJIR)}{Rouen}{}{
     \begin{itemize}
-        \item Developed web projects for clients, including an audit management platform for Bouygues Construction.
+        \item Developed web applications for clients including Bouygues Construction.
     \end{itemize}}
 
 % Education
@@ -189,14 +187,19 @@ Proficient in a wide range of technologies, with expertise in Python, C\#, .NET,
 
 % Personal Projects
 \section{Personal Projects}
-\cventry{2022}{Bibliochouette 2.0}{In development}{}{}{
+\cventry{2022}{Bibliochouette PWA}{Production}{\href{https://app.bibliochouette.fr}{app.bibliochouette.fr}}{}{
     \begin{itemize}
-        \item Web application currently in development (.NET -- Azure -- Blazor), planned for release in early 2025.
+        \item Complete rewrite of the Bibliochouette mobile application using Go backend, React PWA frontend, and PostgreSQL database.
+        \item Improved performance, scalability, and user experience compared to the original mobile app.
+        \item Implemented new features including enhanced search, social features, and improved mobile responsiveness.
+        \item Current discussions underway with associations for social deployment around the world.
     \end{itemize}}
 
-\cventry{2018}{Bibliochouette: Mobile Application}{Migrated}{}{}{
+\cventry{2018}{Bibliochouette: Mobile Application}{Deprecated}{}{}{
     \begin{itemize}
         \item Library management application available on Android and iOS, with approximately 2,000 users as of December 2022.
+        \item Deprecated in favor of a web project for better maintainability and cross-platform compatibility.
+        \item Been using Firebase for backend services \& flutter for frontend development.
     \end{itemize}}
 
 \cventry{2020}{Geochat.fr: Web Application}{Abandoned}{}{}{
@@ -208,8 +211,8 @@ Proficient in a wide range of technologies, with expertise in Python, C\#, .NET,
 \section{Hobbies}
 \cventry{}{Running}{Personal Records}{}{}{
     \begin{itemize}
-        \item Half marathon (Bois Guillaume 2024): 01:59:58
-        \item 10km (Rouen 2024): 00:55:59
+        \item Half marathon (Bois Guillaume 2025): 01:56:18
+        \item 10km (Rouen 2025): 00:48:59
     \end{itemize}}
 
 \cventry{}{Reading}{}{}{}{
