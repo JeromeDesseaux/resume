@@ -14,13 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y make texlive texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-french
-
-      - name: Build PDFs using Makefile
-        run: make
+      - name: Build PDFs using Docker
+        run: make docker-all
 
       - name: Delete Existing Release
         run: |
