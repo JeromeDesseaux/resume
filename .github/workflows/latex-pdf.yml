@@ -41,7 +41,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume_en.pdf
-          asset_name: CV_jerome_desseaux_techlead_freelance_en.pdf
+          asset_name: CV_jerome_desseaux_en.pdf
           asset_content_type: application/pdf
 
       - name: Upload French PDF to Release
@@ -51,5 +51,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume_fr.pdf
-          asset_name: CV_jerome_desseaux_techlead_freelance_fr.pdf
+          asset_name: CV_jerome_desseaux_fr.pdf
           asset_content_type: application/pdf
