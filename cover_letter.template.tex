@@ -1,0 +1,57 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[left=1.6cm,right=1.6cm,top=1.35cm,bottom=1.35cm]{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+% Informations personnelles
+% Remplacer par vos propres coordonnées.
+\name{Prénom}{NOM}
+\title{Intitulé du poste visé}
+\address{Adresse}{Code postal Ville}{Pays}
+\phone[mobile]{+33 X XX XX XX XX}
+\email{prenom.nom@example.com}
+\social[github]{votre-pseudo}
+
+% Informations propres au courrier
+% Remplacer par le destinataire réel.
+\recipient{Nom de l’entreprise}
+{Service recrutement\\
+Adresse ligne 1\\
+Adresse ligne 2\\
+Code postal Ville}
+\date{Ville, le \today}
+\subject{Objet : Candidature au poste de [intitulé]}
+\opening{Madame, Monsieur,}
+\closing{Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.}
+\enclosure[Pièce jointe]{Curriculum vitæ}
+
+\hypersetup{
+  pdftitle={Prénom NOM - Candidature - Intitulé du poste},
+  pdfauthor={Prénom NOM},
+  pdfsubject={Candidature}
+}
+
+\begin{document}
+
+\makelettertitle
+
+Ingénieur diplômé et professionnel du logiciel et de la donnée depuis plusieurs années, je souhaite aujourd'hui mettre cette expérience au service de votre organisation. Le poste de [intitulé du poste] correspond précisément à ce que je recherche : transformer des besoins métiers et des données hétérogènes en solutions fiables, utiles à la décision et durables dans le temps.
+
+Mon parcours m'a permis de travailler sur des sujets de data science, de développement logiciel et d'industrialisation, avec des environnements tels que Python, SQL, PostgreSQL, des pipelines ETL, des API et des services en production. J'y ai développé une approche pragmatique, centrée sur la qualité, la maintenabilité et la valeur livrée.
+
+Plus récemment, j'ai contribué à des fonctionnalités d'IA appliquée et à des architectures microservices. Cette trajectoire me permet d'apporter non seulement la capacité à explorer et modéliser la donnée, mais aussi à cadrer, développer, tester, déployer, sécuriser et maintenir des solutions au-delà du stade du prototype.
+
+Habitué à travailler au contact des équipes métiers et Produit, à expliciter des choix techniques et à accompagner des collaborateurs, je peux contribuer au cadrage des usages, à la qualité du patrimoine informationnel et à la mise en œuvre de solutions robustes et utiles. Mon expérience m'a également sensibilisé aux exigences de fiabilité, de clarté et de responsabilité attendues dans les organisations exigeantes.
+
+Je serais ravi de pouvoir échanger avec vous sur les projets envisagés et sur la manière dont mon profil pourrait contribuer à leur réussite.
+
+\makeletterclosing
+
+\end{document}

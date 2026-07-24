@@ -32,6 +32,9 @@
 # PDF files
 *.pdf
 
+# Private cover letter working copy
+cover_letter.tex
+
 # Backup files
 *~
 *.bak
